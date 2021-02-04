@@ -14,9 +14,11 @@ class Facade extends BaseFacade
 {
     /**
      * @noinspection PhpMethodNamingConventionInspection
+     * @noinspection PhpMissingParentCallCommonInspection
      */
     protected static function getFacadeAccessor(): string
     {
+        // parent::getFacadeAccessor();
         return Constant::getName();
     }
 }
