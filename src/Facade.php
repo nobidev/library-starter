@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Facade as BaseFacade;
  */
 class Facade extends BaseFacade
 {
+    /**
+     * @noinspection PhpMethodNamingConventionInspection
+     */
     protected static function getFacadeAccessor(): string
     {
         return Constant::getName();
